@@ -21,6 +21,8 @@ public class AnalyticsController implements Initializable {
     @FXML private VBox averageDurationColumn;
     @FXML private Label averageDurationLabel;
     @FXML private Label averageDurationValue;
+    @FXML private Label progressPercentageLabel;
+
 
     @FXML private Label goalsSectionTitle;
     @FXML private HBox goalsCardsRow;
@@ -73,9 +75,14 @@ public class AnalyticsController implements Initializable {
     // ✅ ProgressBar Update Function
     public void updateProgressBar(double progress) {
         if (overallProgressBar != null) {
-            overallProgressBar.setProgress(progress); // من 0 لـ 1
+            overallProgressBar.setProgress(progress);
+        }
+        if (progressPercentageLabel != null) {
+            int percentage = (int) (progress * 100);
+            progressPercentageLabel.setText(percentage + "%");
         }
     }
+
 
     public void refreshDashboard() {
         initializeDashboard();

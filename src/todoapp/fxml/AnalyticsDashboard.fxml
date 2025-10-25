@@ -74,7 +74,20 @@
        <!-- Overall Progress Section Card -->
        <VBox fx:id="progressCard" styleClass="progress-card" HBox.hgrow="ALWAYS">
            <children>
-               <Label fx:id="progressBarTitle" styleClass="goal-label" text="Daily Productivity Progress" />
+
+               <HBox fx:id="progressHeaderBox" alignment="CENTER_LEFT" styleClass="progress-header">
+                   <children>
+                       <Label fx:id="progressBarTitle" styleClass="progress-title" text="Daily Productivity Progress" />
+
+                       <!-- Spacer pushes the percentage to the right -->
+                       <HBox HBox.hgrow="ALWAYS"></HBox>
+
+                       <!-- Percentage on the Right -->
+                       <Label fx:id="progressPercentageLabel" text="80%" styleClass="progress-percentage"/>
+                   </children>
+               </HBox>
+
+
                <ProgressBar fx:id="overallProgressBar" styleClass="custom-progress-bar" HBox.hgrow="ALWAYS"
                             progress="0.80" />
            </children>

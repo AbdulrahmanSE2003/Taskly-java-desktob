@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c04203e7-fc76-4dc3-b20e-4924c8b071aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/todoapp/style/splash.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoapp/fxml/splash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/fxml/splash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoapp/controller/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/controller/AnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoapp/fxml/AnalyticsDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/fxml/AnalyticsDashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoapp/style/analytics.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/style/analytics.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="34ZHlWSLFNdZLtxedYNh6ucj2bR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,7 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "splashScreen",
+    "git-widget-placeholder": "percent",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
