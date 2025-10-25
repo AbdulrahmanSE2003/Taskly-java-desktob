@@ -1,0 +1,21 @@
+.root {
+    -fx-background-color: #FFFFFF; /* خلفية نظيفة */
+    -fx-font-family: "Segoe UI", "Helvetica", sans-serif;
+    -fx-padding: 30;
+    -fx-alignment: center;
+    -fx-background-radius: 20; /* rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.5, 0, 4); /* ظل لطيف */
+}
+
+.title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0065F8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.3, 2, 2);
+}
+
+.subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: #161A30;
+    -fx-opacity: 0.85;
+}

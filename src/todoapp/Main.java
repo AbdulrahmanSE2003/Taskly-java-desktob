@@ -15,11 +15,13 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             // 1️⃣ سبلاش سكريـن
-            FXMLLoader splashLoader = new FXMLLoader(getClass().getResource("fxml/SplashScreen.fxml"));
+            FXMLLoader splashLoader = new FXMLLoader(getClass().getResource("fxml/splash.fxml"));
             VBox splashRoot = splashLoader.load();
             Stage splashStage = new Stage();
             splashStage.initStyle(StageStyle.UNDECORATED);
-            splashStage.setScene(new Scene(splashRoot));
+            Scene splashScene = new Scene(splashRoot, 450, 300); // عرض 450px وارتفاع 300px
+            splashStage.setScene(splashScene);
+            splashStage.centerOnScreen(); // خلي السبلاش في النص
             splashStage.show();
 
             // 2️⃣ بعد 2.5 ثانية افتح الداشبورد
@@ -38,7 +40,7 @@ public class Main extends Application {
                     primaryStage.centerOnScreen();
                     primaryStage.show();
 
-                    splashStage.close(); // اقفل السبلاش
+                    splashStage.close();
                 } catch (Exception e) {
                     e.printStackTrace();
                     System.err.println("Error loading the Analytics Dashboard: " + e.getMessage());

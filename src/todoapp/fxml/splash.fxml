@@ -7,7 +7,8 @@
       xmlns:fx="http://javafx.com/fxml"
       alignment="CENTER"
       spacing="10"
-      stylesheets="@../../../../Splash-Screen/src/splash/style/style.css">
+      styleClass="root"
+      stylesheets="@../style/splash.css">
 
     <Label text="Taskly" styleClass="title"/>
     <Label text="Organize your tasks easily" styleClass="subtitle"/>
