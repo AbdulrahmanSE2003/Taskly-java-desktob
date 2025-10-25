@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c04203e7-fc76-4dc3-b20e-4924c8b071aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todoapp/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-for-team.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoapp/controller/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/controller/AnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoapp/fxml/AnalyticsDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/fxml/AnalyticsDashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoapp/style/analytics.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/style/analytics.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +29,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Taskly.executor": "Run",
+    "Application.Unnamed.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -39,7 +43,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Taskly" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="todoapp.Main" />
       <module name="Taskly" />
       <option name="VM_PARAMETERS" value="--module-path &quot;F:\javaFX\openjfx-21.0.8_windows-x64_bin-sdk\javafx-sdk-21.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml " />

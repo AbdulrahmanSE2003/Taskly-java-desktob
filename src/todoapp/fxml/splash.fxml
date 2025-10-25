@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="10"
+      stylesheets="@../../../../Splash-Screen/src/splash/style/style.css">
+
+    <Label text="Taskly" styleClass="title"/>
+    <Label text="Organize your tasks easily" styleClass="subtitle"/>
+</VBox>

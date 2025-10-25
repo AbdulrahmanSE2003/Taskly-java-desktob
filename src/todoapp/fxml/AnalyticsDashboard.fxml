@@ -6,14 +6,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
+<?import javafx.scene.control.ProgressBar?>
 <VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoapp.controller.AnalyticsController" styleClass="root">
    <children>
       <!-- Header Section -->
       <Label fx:id="headerTitle" styleClass="header-title" text="Analytics Dashboard" />
-      
+
       <!-- Pomodoro Sessions Section -->
       <Label fx:id="pomodoroSectionTitle" styleClass="section-title" text="Pomodoro Sessions" />
-      
+
       <!-- Pomodoro Sessions Card -->
       <HBox fx:id="pomodoroCard" styleClass="pomodoro-card">
          <children>
@@ -24,10 +25,10 @@
                   <Label fx:id="totalSessionsValue" styleClass="metric-value" text="245" />
                </children>
             </VBox>
-            
+
             <!-- Vertical Divider -->
             <Separator fx:id="pomodoroDivider" styleClass="vertical-divider" orientation="VERTICAL" />
-            
+
             <!-- Average Duration Column -->
             <VBox fx:id="averageDurationColumn" styleClass="metric-column" HBox.hgrow="ALWAYS">
                <children>
@@ -37,10 +38,10 @@
             </VBox>
          </children>
       </HBox>
-      
+
       <!-- Goals Section -->
       <Label fx:id="goalsSectionTitle" styleClass="section-title" text="Goals" />
-      
+
       <!-- Goals Cards Row -->
       <HBox fx:id="goalsCardsRow" styleClass="goals-cards-row">
          <children>
@@ -51,7 +52,7 @@
                   <Label fx:id="goalsCompletedValue" styleClass="goal-value" text="12" />
                </children>
             </VBox>
-            
+
             <!-- Goals In Progress Card -->
             <VBox fx:id="goalsInProgressCard" styleClass="goal-card" HBox.hgrow="ALWAYS">
                <children>
@@ -59,7 +60,7 @@
                   <Label fx:id="goalsInProgressValue" styleClass="goal-value" text="3" />
                </children>
             </VBox>
-            
+
             <!-- Overall Progress Card -->
             <VBox fx:id="overallProgressCard" styleClass="goal-card" HBox.hgrow="ALWAYS">
                <children>
@@ -69,5 +70,15 @@
             </VBox>
          </children>
       </HBox>
+
+       <!-- Overall Progress Section Card -->
+       <VBox fx:id="progressCard" styleClass="progress-card" HBox.hgrow="ALWAYS">
+           <children>
+               <Label fx:id="progressBarTitle" styleClass="goal-label" text="Daily Productivity Progress" />
+               <ProgressBar fx:id="overallProgressBar" styleClass="custom-progress-bar" HBox.hgrow="ALWAYS"
+                            progress="0.80" />
+           </children>
+       </VBox>
+
    </children>
 </VBox>

@@ -3,6 +3,7 @@ package todoapp.controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -20,6 +21,7 @@ public class AnalyticsController implements Initializable {
     @FXML private VBox averageDurationColumn;
     @FXML private Label averageDurationLabel;
     @FXML private Label averageDurationValue;
+
     @FXML private Label goalsSectionTitle;
     @FXML private HBox goalsCardsRow;
     @FXML private VBox goalsCompletedCard;
@@ -32,6 +34,10 @@ public class AnalyticsController implements Initializable {
     @FXML private Label overallProgressLabel;
     @FXML private Label overallProgressValue;
 
+    // ✅ Progress Bar Elements
+    @FXML private Label progressBarTitle;
+    @FXML private ProgressBar overallProgressBar;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         initializeDashboard();
@@ -40,6 +46,7 @@ public class AnalyticsController implements Initializable {
     private void initializeDashboard() {
         updatePomodoroSessions(245, "25 min");
         updateGoals(12, 3, "80%");
+        updateProgressBar(0.80); // ✅ 80%
     }
 
     public void updatePomodoroSessions(int totalSessions, String averageDuration) {
@@ -63,6 +70,13 @@ public class AnalyticsController implements Initializable {
         }
     }
 
+    // ✅ ProgressBar Update Function
+    public void updateProgressBar(double progress) {
+        if (overallProgressBar != null) {
+            overallProgressBar.setProgress(progress); // من 0 لـ 1
+        }
+    }
+
     public void refreshDashboard() {
         initializeDashboard();
     }
@@ -70,8 +84,8 @@ public class AnalyticsController implements Initializable {
     public String[] getPomodoroData() {
         if (totalSessionsValue != null && averageDurationValue != null) {
             return new String[]{
-                totalSessionsValue.getText(),
-                averageDurationValue.getText()
+                    totalSessionsValue.getText(),
+                    averageDurationValue.getText()
             };
         }
         return new String[]{"0", "0 min"};
@@ -80,9 +94,9 @@ public class AnalyticsController implements Initializable {
     public String[] getGoalsData() {
         if (goalsCompletedValue != null && goalsInProgressValue != null && overallProgressValue != null) {
             return new String[]{
-                goalsCompletedValue.getText(),
-                goalsInProgressValue.getText(),
-                overallProgressValue.getText()
+                    goalsCompletedValue.getText(),
+                    goalsInProgressValue.getText(),
+                    overallProgressValue.getText()
             };
         }
         return new String[]{"0", "0", "0%"};
