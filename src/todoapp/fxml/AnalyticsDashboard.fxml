@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoapp.controller.AnalyticsController" styleClass="root">
+   <children>
+      <!-- Header Section -->
+      <Label fx:id="headerTitle" styleClass="header-title" text="Analytics Dashboard" />
+      
+      <!-- Pomodoro Sessions Section -->
+      <Label fx:id="pomodoroSectionTitle" styleClass="section-title" text="Pomodoro Sessions" />
+      
+      <!-- Pomodoro Sessions Card -->
+      <HBox fx:id="pomodoroCard" styleClass="pomodoro-card">
+         <children>
+            <!-- Total Sessions Column -->
+            <VBox fx:id="totalSessionsColumn" styleClass="metric-column" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="totalSessionsLabel" styleClass="metric-label" text="Total Sessions Completed" />
+                  <Label fx:id="totalSessionsValue" styleClass="metric-value" text="245" />
+               </children>
+            </VBox>
+            
+            <!-- Vertical Divider -->
+            <Separator fx:id="pomodoroDivider" styleClass="vertical-divider" orientation="VERTICAL" />
+            
+            <!-- Average Duration Column -->
+            <VBox fx:id="averageDurationColumn" styleClass="metric-column" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="averageDurationLabel" styleClass="metric-label" text="Average Session Duration" />
+                  <Label fx:id="averageDurationValue" styleClass="metric-value" text="25 min" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      
+      <!-- Goals Section -->
+      <Label fx:id="goalsSectionTitle" styleClass="section-title" text="Goals" />
+      
+      <!-- Goals Cards Row -->
+      <HBox fx:id="goalsCardsRow" styleClass="goals-cards-row">
+         <children>
+            <!-- Goals Completed Card -->
+            <VBox fx:id="goalsCompletedCard" styleClass="goal-card" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="goalsCompletedLabel" styleClass="goal-label" text="Goals Completed" />
+                  <Label fx:id="goalsCompletedValue" styleClass="goal-value" text="12" />
+               </children>
+            </VBox>
+            
+            <!-- Goals In Progress Card -->
+            <VBox fx:id="goalsInProgressCard" styleClass="goal-card" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="goalsInProgressLabel" styleClass="goal-label" text="Goals In Progress" />
+                  <Label fx:id="goalsInProgressValue" styleClass="goal-value" text="3" />
+               </children>
+            </VBox>
+            
+            <!-- Overall Progress Card -->
+            <VBox fx:id="overallProgressCard" styleClass="goal-card" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="overallProgressLabel" styleClass="goal-label" text="Overall Progress" />
+                  <Label fx:id="overallProgressValue" styleClass="goal-value" text="80%" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
