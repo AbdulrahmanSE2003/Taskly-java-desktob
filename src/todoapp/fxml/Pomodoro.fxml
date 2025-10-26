@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<!--
+    ===========================================================
+    Pomodoro Timer Main Layout
+    ___________________________________________________________
+    • This view contains the Pomodoro timer functionality.
+    • It is designed to be loaded dynamically into the MainLayout's center area.
+    ===========================================================
+-->
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="todoapp.controller.PomodoroController"
+      stylesheets="@../style/pomodoro.css"
+      alignment="CENTER"
+      styleClass="root-container"
+      spacing="20">
+
+    <!-- Page Title -->
+    <Label fx:id="pageTitle" text="Pomodoro Timer"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <!-- Timer Display -->
+    <VBox fx:id="timerContainer" spacing="10" alignment="CENTER">
+        <Label fx:id="timerLabel" text="00:00"
+               style="-fx-font-size: 48px; -fx-font-weight: bold;"/>
+        <Label fx:id="sessionTypeLabel" text="Session type..."
+               style="-fx-font-size: 16px;"/>
+    </VBox>
+
+    <!-- Timer Control Buttons -->
+    <HBox spacing="15" alignment="CENTER" style="-fx-padding: 20px;">
+        <Button fx:id="startBtn" text="Start" onAction="#startTimer"
+                prefWidth="120" prefHeight="35"/>
+        <Button fx:id="pauseBtn" text="Pause" onAction="#pauseTimer"
+                prefWidth="120" prefHeight="35"/>
+        <Button fx:id="resetBtn" text="Reset" onAction="#resetTimer"
+                prefWidth="120" prefHeight="35"/>
+    </HBox>
+
+    <!-- Work / Break Input Fields and Task Selector -->
+    <HBox spacing="100" alignment="CENTER" style="-fx-padding: 20px;">
+
+        <!-- Session Duration Form -->
+        <VBox fx:id="formContainer" spacing="15" alignment="CENTER_LEFT">
+
+            <!-- Work Duration -->
+            <VBox spacing="5" alignment="CENTER_LEFT">
+                <Label text="Work Session (min):"
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                <TextField fx:id="workField" promptText="e.g. 25"
+                           prefWidth="120" prefHeight="35"/>
+            </VBox>
+
+            <!-- Break Duration -->
+            <VBox spacing="5" alignment="CENTER_LEFT">
+                <Label text="Break Session (min):"
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                <TextField fx:id="breakField" promptText="e.g. 5"
+                           prefWidth="120" prefHeight="35"/>
+            </VBox>
+        </VBox>
+
+        <!-- Task Selection and Session Counter -->
+        <VBox fx:id="sessionsCount" spacing="15" alignment="CENTER_LEFT">
+            <Label fx:id="sessionCountLabel" text="Sessions completed: 0"
+                   style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+            <ComboBox fx:id="taskComboBox"
+                      prefWidth="220"
+                      prefHeight="35"
+                      promptText="Select a task..."
+                      style="-fx-font-size: 14px;"/>
+        </VBox>
+    </HBox>
+</VBox>

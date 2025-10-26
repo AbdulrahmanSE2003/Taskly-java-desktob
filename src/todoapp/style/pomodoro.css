@@ -1,0 +1,161 @@
+/* =========================================================
+   🎨 Global Stylesheet for Pomodoro App
+   ---------------------------------------------------------
+   This file defines consistent styling for all UI components,
+   including layout containers, buttons, labels, text fields,
+   notifications, and sidebar elements.
+   ========================================================= */
+
+
+/* ===============================
+   🔹 ROOT CONTAINERS
+   =============================== */
+.root-container {
+    -fx-background-color: #F9F9F9;
+    -fx-padding: 0;
+    -fx-spacing: 15;
+    -fx-font-family: "Onest", sans-serif;
+}
+
+/* Circular Timer Container */
+#timerContainer {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 250px;
+    -fx-max-width: 250px;
+    -fx-max-height: 250px;
+    -fx-background-radius: 50%;
+    -fx-border-color: #ccc;
+    -fx-border-width: 12px;
+    -fx-border-radius: 50%;
+}
+
+/* ===============================
+   🔹 LABELS
+   =============================== */
+.label {
+    -fx-text-fill: #161A30;
+}
+
+/* Page Title Label */
+#pageTitle {
+    -fx-font-size: 44px;
+    -fx-font-weight: 900;
+    -fx-padding: 12px 0;
+}
+
+/* Timer Display Label */
+#timerLabel {
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+}
+
+/* Session Type Indicator (Work/Break) */
+#sessionTypeLabel {
+    -fx-font-size: 15px;
+    -fx-font-style: italic;
+    -fx-font-weight: 500;
+    -fx-text-fill: #aaa;
+}
+
+/* Session Count Label */
+#sessionCountLabel {
+    -fx-text-fill: #161A30;
+    -fx-font-size: 16px;
+}
+
+/* ===============================
+   🔹 BUTTONS
+   =============================== */
+.button {
+    -fx-text-fill: #F8FAFC;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 10 36;
+    -fx-background-radius: 22;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0, 0, 2);
+    -fx-transition-duration: 0.5s;
+}
+
+/* Individual Button Colors */
+#startBtn { -fx-background-color: #0065F8; }
+#pauseBtn {
+    -fx-background-color: #ddd;
+    -fx-text-fill: #161A30;
+}
+#resetBtn { -fx-background-color: #FAB12F; }
+
+/* Hover Effects */
+#startBtn:hover { -fx-background-color: #4300FF; }
+#pauseBtn:hover { -fx-background-color: #aaa; }
+#resetBtn:hover { -fx-background-color: #EF7722; }
+
+/* Pressed State */
+.button:pressed { -fx-background-color: #023E8A; }
+
+/* ===============================
+   🔹 TEXTFIELDS
+   =============================== */
+.text-field {
+    -fx-background-color: #bbb;
+    -fx-text-fill: #161A30;
+    -fx-prompt-text-fill: #666;
+    -fx-padding: 6px;
+    -fx-font-size: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 3, 0, 0, 2);
+}
+
+/* ===============================
+   🔹 FORM CONTAINERS
+   =============================== */
+#formContainer {
+    -fx-pref-width: 280px;
+    -fx-max-width: 280px;
+    -fx-padding: 16px 24px;
+    -fx-background-radius: 12px;
+    -fx-border: 3px;
+    -fx-border-radius: 12px;
+    -fx-border-color: #999;
+}
+
+/* Session Stats Container */
+#sessionsCount {
+    -fx-pref-width: 330px;
+    -fx-max-width: 330px;
+    -fx-padding: 16px 24px;
+    -fx-background-radius: 12px;
+    -fx-border: 3px;
+    -fx-border-radius: 12px;
+    -fx-border-color: #999;
+}
+
+/* ComboBox Styling */
+#taskComboBox {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+}
+
+/* ===============================
+   🔹 HBOXES
+   =============================== */
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+/* ===============================
+   🔹 NOTIFICATIONS
+   =============================== */
+#popup-container {
+    -fx-background-color: red;
+}
+
+/* Success Notification */
+.notification-success {
+    -fx-background-color: #4CAF50;
+}
+
+/* Error Notification */
+.notification-error {
+    -fx-background-color: #F44336;
+}

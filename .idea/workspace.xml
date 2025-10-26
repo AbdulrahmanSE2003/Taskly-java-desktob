@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c04203e7-fc76-4dc3-b20e-4924c8b071aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/todoapp/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todoapp/controller/SidebarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todoapp/fxml/MainLayout.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todoapp/fxml/sidebar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todoapp/style/sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todoapp/controller/PomodoroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todoapp/fxml/Pomodoro.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todoapp/style/pomodoro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +44,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sidebar",
+    "git-widget-placeholder": "pomodoro",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Projects/Java/Taskly/src/todoapp/fxml",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -55,6 +54,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\Java\Taskly\src\todoapp\fxml" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Projects\Java\Taskly\src\todoapp\fxml" />
       <recent name="F:\Projects\Java\Taskly\src\todoapp\style" />
