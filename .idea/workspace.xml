@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c04203e7-fc76-4dc3-b20e-4924c8b071aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/todoapp/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todoapp/controller/SidebarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todoapp/fxml/MainLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todoapp/fxml/sidebar.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todoapp/style/sidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoapp/controller/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/controller/AnalyticsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoapp/fxml/AnalyticsDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/fxml/AnalyticsDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todoapp/style/analytics.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/style/analytics.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todoapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todoapp/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,17 +46,21 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "percent",
+    "git-widget-placeholder": "sidebar",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Projects\Java\Taskly\src\todoapp\style" />
       <recent name="F:\Projects\Java\Taskly\src\todoapp\fxml" />
+      <recent name="F:\Projects\Java\Taskly\src\todoapp\style" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="todoapp.controller" />
     </key>
   </component>
   <component name="RunManager">

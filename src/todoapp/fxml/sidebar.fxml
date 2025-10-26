@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.*?>
+
+
+
+
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="todoapp.controller.SidebarController"
+      fx:id="sidebar"
+      styleClass="sidebar"
+      alignment="TOP_LEFT"
+      prefWidth="250"
+      spacing="20">
+
+    <!-- Brand -->
+    <Label text="Taskly" styleClass="sidebar-title"/>
+
+    <!-- Navigation Container -->
+    <VBox fx:id="menuContainer" spacing="10" alignment="TOP_LEFT">
+
+        <HBox fx:id="selectedTab" styleClass="sidebar-btn" onMouseClicked="#handleTabClick">
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@icons/menu.png"/>
+            </ImageView>
+            <Label text="Dashboard"/>
+        </HBox>
+
+        <HBox styleClass="sidebar-btn" onMouseClicked="#handleTabClick">
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@icons/checklist.png"/>
+            </ImageView>
+            <Label text="Tasks"/>
+        </HBox>
+
+        <HBox  styleClass="sidebar-btn" onMouseClicked="#handleTabClick">
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@icons/stopwatch.png"/>
+            </ImageView>
+            <Label text="Pomodoro"/>
+        </HBox>
+
+        <HBox styleClass="sidebar-btn" onMouseClicked="#handleTabClick">
+            <ImageView fitHeight="18" fitWidth="18">
+                <Image url="@icons/goal.png"/>
+            </ImageView>
+            <Label text="Goals"/>
+        </HBox>
+
+    </VBox>
+
+</VBox>
